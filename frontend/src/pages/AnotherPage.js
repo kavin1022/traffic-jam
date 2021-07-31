@@ -1,10 +1,12 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import '../styling/index.css';
-import Button from '../components/Button';
 import InfoStats from '../components/TrafficPage/InfoStats';
+import Button from '@material-ui/core/Button';
 
 function startBreak() {
   document.body.style = 'background: #bb1e10;';
+  console.log("test")
 }
 
 function finishBreak() {
@@ -15,11 +17,13 @@ function AnotherPage() {
 
   return (
     <div>
-      <h1>Traffic-Jam</h1>
+      <h1>Room Number: #28123</h1>
       <InfoStats/>
-      <div>
-        <Button buttonText={"Break Time"} clickAction={startBreak} />
-        <Button buttonText={"Finish Break"} clickAction={finishBreak} />
+      <br/>
+      <div className="three-lights">
+        <button class="red" onClick={startBreak}></button>
+        <span class="yellow"></span>
+        <button class="green" onClick={finishBreak}></button>
       </div>
     </div>
 
