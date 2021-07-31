@@ -18,16 +18,21 @@ body {
   flex-grow: 1;
 }
 
-.styledBtn {
-  color: black;
-  background-color: white;
-
-  border: 2px solid red;
-  border-radius: 5px;
-  padding: 10px;
-  display: inline-block;
-  
-  margin-top: 10px;
-  
-  cursor: pointer;
+.startBtnContainer {
+    display: flex;
+    justify-content: center;
+    
 }
+
+.styledBtn {
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: inline-block;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    cursor: pointer;
+  }
