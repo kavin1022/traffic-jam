@@ -23,11 +23,11 @@ function IndexPage() {
       <div className={'spacer'} />
       <div className={'content'}>
         <h1>Traffic Jam</h1>
-        <Link to="/another">
-          <button className="styledBtn">Start</button>
+        <Link to="/start">
+          <Button className="styledBtn">Start</Button>
         </Link>
-        <Link to="/another">
-          <button className="styledBtn">Join</button>
+        <Link to="/join">
+          <Button className="styledBtn">Join</Button>
         </Link>
       </div>
       <div className={'spacer'} />
