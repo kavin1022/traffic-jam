@@ -7,16 +7,16 @@ function IndexPage() {
     <div id={'index-container'}>
       <div className={'spacer'} />
       <div className={'content'}>
-        <div id="title">
-          <h1>Traffic Jam</h1>
+        <div>
+          <h1 id="title">Traffic Jam</h1>
         </div>
         <div className="startBtnContainer">
-          <Link to="/another">
+          <Link to="/start">
             <button className="startScreenBtn">
               Start
             </button>
           </Link>
-          <Link to="/another">
+          <Link to="/join">
             <button className="startScreenBtn">
               Join
             </button>

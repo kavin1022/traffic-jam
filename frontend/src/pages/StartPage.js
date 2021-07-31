@@ -34,7 +34,7 @@ function StartPage() {
                 <h1>Enter User Details</h1>
                     <StyledFormContainer noValidate autoComplete="off">
                         <TextField label="Username" variant="outlined">Username</TextField>
-                        <Link to="/lobby">
+                        <Link to="/another">
                         <StyledMuiButton variant="contained" color="primary">Submit</StyledMuiButton>          
                         </Link>
                     </StyledFormContainer>

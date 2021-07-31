@@ -30,7 +30,7 @@ function JoinPage() {
                 <TextField label="Username" variant="outlined">Username</TextField>
                 <TextField label="Lobby Code" variant="outlined">Lobby Code</TextField>
             </div>
-                <Link to="/lobby">
+                <Link to="/another">
                     <Button variant="contained" color="primary" disableElevation>Submit</Button>
                 </Link>
             </StyledFormContainer>
