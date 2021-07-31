@@ -17,3 +17,17 @@ body {
   justify-content: space-around;
   flex-grow: 1;
 }
+
+.styledBtn {
+  color: black;
+  background-color: white;
+
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
