@@ -1,6 +1,7 @@
 #index-container {
     background-color: #575656;
     box-shadow: inset 0px 0px 90px 90px #444444;
+    z-index: 999;
 }
 
 .startBtnContainer {
@@ -11,6 +12,7 @@
 #title {
     color:white;
     font-size: 7rem;
+    z-index: 999;
 }
 
 .links:hover{
@@ -29,34 +31,56 @@
     cursor:pointer;
 }
 
-#animation {
+#animation1 {
     position: absolute;
+    margin-left: 49%;
     background-color: orange;
     width: 40px;
-    height: 730px;
+    height: 600px;
     -webkit-animation: slide-bottom 3s linear infinite both;
 	animation: slide-bottom 3s linear infinite both;
-    z-index: 999;
-    
 }
 
 @-webkit-keyframes slide-bottom {
     0% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+      -webkit-transform: translateY(-1200px);
+              transform: translateY(-1200px);
     }
     100% {
-      -webkit-transform: translateY(700px);
-              transform: translateY(700px);
+      -webkit-transform: translateY(1200px);
+              transform: translateY(1200px);
     }
   }
-  @keyframes slide-bottom {
+@keyframes slide-bottom {
     0% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+      -webkit-transform: translateY(-1200px);
+              transform: translateY(-1200px);
     }
     100% {
-      -webkit-transform: translateY(700px);
-              transform: translateY(700px);
+
+      -webkit-transform: translateY(1200px);
+              transform: translateY(1200px);
     }
   }
+
+#animation2 {
+    position: absolute;
+    margin-left: 49%;
+    background-color: orange;
+    width: 40px;
+    height: 600px;
+    -webkit-animation: slide-bottom 3s linear infinite both;
+	animation: slide-bottom 3s linear infinite both;
+    animation-delay: 1s;
+}
+
+  #animation3 {
+    position: absolute;
+    margin-left: 49%;
+    background-color: orange;
+    width: 40px;
+    height: 600px;
+    -webkit-animation: slide-bottom 3s linear infinite both;
+	animation: slide-bottom 3s linear infinite both;
+    animation-delay: 5s; 
+}
