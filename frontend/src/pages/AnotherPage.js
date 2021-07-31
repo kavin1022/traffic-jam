@@ -43,7 +43,7 @@ function AnotherPage() {
       <h1>Room Number: #28123</h1>
       <InfoStats/>
       <br/>
-      <p>{message}</p>
+      <p id="message">{message}</p>
       <div className="three-lights">
         <button className="red" onClick={startBreak}></button>
         <span className="yellow"></span>
