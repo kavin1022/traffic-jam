@@ -1,19 +1,30 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import '../styling/index.css';
-import Button from '../components/Button';
-import { getMeaningOfLife } from '../utils/ExampleUtil';
+import InfoStats from '../components/TrafficPage/InfoStats';
+import Button from '@material-ui/core/Button';
 
-function getResult() {
-  alert(`The meaning of life: ${getMeaningOfLife()}`)
+function startBreak() {
+  document.body.style = 'background: #bb1e10;';
+  console.log("test")
+}
+
+function finishBreak() {
+  document.body.style = 'background: #33a532;';
 }
 
 function AnotherPage() {
 
   return (
     <div>
-      <h1>This is another page!</h1>
-      <p>Go back to the previous page <a href={'/'}>here</a></p>
-      <Button buttonText={"Find out the meaning of life"} clickAction={getResult} />
+      <h1>Room Number: #28123</h1>
+      <InfoStats/>
+      <br/>
+      <div className="three-lights">
+        <button class="red" onClick={startBreak}></button>
+        <span class="yellow"></span>
+        <button class="green" onClick={finishBreak}></button>
+      </div>
     </div>
 
   );
