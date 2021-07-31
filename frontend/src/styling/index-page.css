@@ -1,6 +1,6 @@
 #index-container {
     background-color: #575656;
-    box-shadow: inset 0px 0px 90px 90px #444444;
+    /**box-shadow: inset 0px 0px 90px 90px #444444;**/
 }
 
 .startBtnContainer {

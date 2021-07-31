@@ -68,3 +68,7 @@ body {
 .green:hover{
   cursor: pointer;
 }
+
+#page-box{
+  margin-top: 40px;
+}
