@@ -1,7 +1,6 @@
 #index-container {
     background-color: #575656;
     box-shadow: inset 0px 0px 90px 90px #444444;
-    z-index: 999;
 }
 
 .startBtnContainer {
@@ -36,7 +35,7 @@
     margin-left: 49%;
     background-color: orange;
     width: 40px;
-    height: 600px;
+    height: 400px;
     -webkit-animation: slide-bottom 3s linear infinite both;
 	animation: slide-bottom 3s linear infinite both;
 }
@@ -68,7 +67,7 @@
     margin-left: 49%;
     background-color: orange;
     width: 40px;
-    height: 600px;
+    height: 400px;
     -webkit-animation: slide-bottom 3s linear infinite both;
 	animation: slide-bottom 3s linear infinite both;
     animation-delay: 1s;
@@ -79,8 +78,12 @@
     margin-left: 49%;
     background-color: orange;
     width: 40px;
-    height: 600px;
+    height: 400px;
     -webkit-animation: slide-bottom 3s linear infinite both;
 	animation: slide-bottom 3s linear infinite both;
     animation-delay: 5s; 
+}
+
+#ani{
+    z-index: 0;
 }
