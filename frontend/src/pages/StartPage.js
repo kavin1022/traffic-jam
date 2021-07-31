@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import '../styling/index-page.css';
 
 const StyledMuiButton = styled(Button)`
 & {
@@ -33,9 +34,9 @@ function StartPage() {
             <div className={'content'}>
                 <h1>Enter User Details</h1>
                     <StyledFormContainer noValidate autoComplete="off">
-                        <TextField label="Username" variant="outlined">Username</TextField>
+                        <TextField label="Username" variant="outlined" >Username</TextField>
                         <Link to="/another">
-                        <StyledMuiButton variant="contained" color="primary">Submit</StyledMuiButton>          
+                        <StyledMuiButton variant="contained" color="primary" id="page-box">Submit</StyledMuiButton>          
                         </Link>
                     </StyledFormContainer>
             </div>
