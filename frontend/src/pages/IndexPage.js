@@ -6,26 +6,22 @@ function IndexPage() {
   return (
     <>
     <div id={'index-container'}>
-    <div id="animation"></div>
-      <div className={'spacer'} />
-      <div className={'content'}>
+      <div id="animation"></div>
         <div>
           <h1 id="title">Traffic Jam</h1>
         </div>
         <div className="startBtnContainer">
-          <Link to="/start">
-            <button className="startScreenBtn">
+          <Link to="/start" className="links">
+            <button type="button" className="startScreenBtn">
               Start
             </button>
           </Link>
-          <Link to="/join">
+          <Link to="/join" className="links">
             <button className="startScreenBtn">
               Join
             </button>
           </Link>
         </div>
-      </div>
-      <div className={'spacer'} />
     </div>
     </>
   );
