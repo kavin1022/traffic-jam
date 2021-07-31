@@ -75,3 +75,12 @@ body {
 .green:hover{
   cursor: pointer;
 }
+
+#page-box{
+  margin-top: 40px;
+}
+
+#message{
+  margin-top: 180px;
+  font-size: 50px;
+}
