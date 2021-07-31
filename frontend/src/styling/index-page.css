@@ -13,61 +13,50 @@
     font-size: 7rem;
 }
 
+.links:hover{
+    cursor:default ;
+}
+
 .startScreenBtn {
-    border-radius: 5rem;
-    width: 14rem;
-    height: 6rem;
-    margin: 7rem;
+    border-radius: 50px;
+    width: 300px;
+    height: 100px;
+    margin: 150px;
     font-size: 3rem;;
 }
 
+.startScreenBtn:hover {
+    cursor:pointer;
+}
+
 #animation {
-    width: 50px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    -webkit-animation-name: ani;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: 3;
-    -webkit-animation-direction: alternate;
-    animation-name: ani;
-    animation-duration: 4s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    position: absolute;
+    background-color: orange;
+    width: 40px;
+    height: 730px;
+    -webkit-animation: slide-bottom 3s linear infinite both;
+	animation: slide-bottom 3s linear infinite both;
+    z-index: 999;
+    
 }
 
-@-webkit-keyframes ani {
+@-webkit-keyframes slide-bottom {
     0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-    50% {
-        background-color: green;
-        bottom: 0px;
-        top: 200px;
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
     }
     100% {
-        background-color: red;
-        bottom: 0px;
-        top: 0px;
+      -webkit-transform: translateY(700px);
+              transform: translateY(700px);
     }
-}
-
-@keyframes ani {
+  }
+  @keyframes slide-bottom {
     0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-    50% {
-        background-color: green;
-        bottom: 0px;
-        top: 200px;
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
     }
     100% {
-        background-color: red;
-        bottom: 0px;
-        top: 0px;
+      -webkit-transform: translateY(700px);
+              transform: translateY(700px);
     }
-}
+  }
