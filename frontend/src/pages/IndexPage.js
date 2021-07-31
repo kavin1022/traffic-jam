@@ -1,10 +1,12 @@
 import React from 'react';
-import '../styling/start-page.css';
+import '../styling/index-page.css';
 import { Link } from 'react-router-dom';
 
 function IndexPage() {
   return (
+    <>
     <div id={'index-container'}>
+    <div id="animation"></div>
       <div className={'spacer'} />
       <div className={'content'}>
         <div>
@@ -25,6 +27,7 @@ function IndexPage() {
       </div>
       <div className={'spacer'} />
     </div>
+    </>
   );
 }
 
