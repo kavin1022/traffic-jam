@@ -31,3 +31,47 @@ body {
   
   cursor: pointer;
 }
+
+.three-lights{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  bottom: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  position: fixed;
+  padding: 10px;
+  gap: 20px
+}
+
+.red {
+  border: solid 1px black;
+  background:#B81D13;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.red:hover{
+  cursor: pointer;
+}
+
+.yellow {
+  border: solid 1px;
+  background: #EFB700;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.green {
+  border: solid 1px;
+  background: #008450;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.green:hover{
+  cursor: pointer;
+}

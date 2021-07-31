@@ -47,6 +47,7 @@ const InfoStats = () => {
             <div>
                 <p>Start Time: 2021-07-31 09:00</p>
                 <p>Total Number of Breaks: 5</p>
+                <p>Current Duartion: 56 minutes</p>
             </div>
             <Button variant="contained" color="primary" onClick={closeModal}>Close</Button>
         </Modal>
