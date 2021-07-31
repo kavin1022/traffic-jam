@@ -1,0 +1,73 @@
+#index-container {
+    background-color: #575656;
+    box-shadow: inset 0px 0px 90px 90px #444444;
+}
+
+.startBtnContainer {
+    display: flex;
+    justify-content:center;
+}
+
+#title {
+    color:white;
+    font-size: 7rem;
+}
+
+.startScreenBtn {
+    border-radius: 5rem;
+    width: 14rem;
+    height: 6rem;
+    margin: 7rem;
+    font-size: 3rem;;
+}
+
+#animation {
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: ani;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 3;
+    -webkit-animation-direction: alternate;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes ani {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        background-color: green;
+        bottom: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        bottom: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes ani {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        background-color: green;
+        bottom: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        bottom: 0px;
+        top: 0px;
+    }
+}
