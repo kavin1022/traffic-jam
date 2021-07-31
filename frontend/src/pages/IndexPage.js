@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 function IndexPage() {
   return (
-    <>
+    <div>
+    <div id="animation1"></div>
+    <div id="animation2"></div>
+    <div id="animation3"></div>
     <div id={'index-container'}>
-      <div id="animation"></div>
         <div>
           <h1 id="title">Traffic Jam</h1>
         </div>
@@ -23,7 +25,7 @@ function IndexPage() {
           </Link>
         </div>
     </div>
-    </>
+    </div>
   );
 }
 
