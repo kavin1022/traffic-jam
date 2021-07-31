@@ -2,6 +2,7 @@ import React from 'react';
 import '../styling/index.css';
 import Button from '../components/Button';
 import exampleCall from '../api/exampleCall';
+import { Link } from 'react-router-dom';
 
 function showAlert() {
   alert('You just clicked the button!');
@@ -21,13 +22,13 @@ function IndexPage() {
     <div id={'index-container'}>
       <div className={'spacer'} />
       <div className={'content'}>
-        <h1>Welcome home!</h1>
-        <p>You have reached the default index page of the WDCC x SESA Mern Hackathon.</p>
-        <p>This block of text is vertically centered through the magic of <b>CSS flexbox</b></p>
-        <p>Go to another page <a href={'/another'}>here</a></p>
-
-        <Button buttonText={'Click me!'} clickAction={showAlert} />
-        <Button buttonText={'Say hello to the server!'} clickAction={callServer} />
+        <h1>Traffic Jam</h1>
+        <Link to="/another">
+          <button className="styledBtn">Start</button>
+        </Link>
+        <Link to="/another">
+          <button className="styledBtn">Join</button>
+        </Link>
       </div>
       <div className={'spacer'} />
     </div>
