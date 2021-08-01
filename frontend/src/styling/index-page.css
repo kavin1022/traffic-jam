@@ -87,3 +87,8 @@
 #ani{
     z-index: 0;
 }
+
+#enter-detail-page {
+    background-color: white;
+    height: 100vh;
+}
