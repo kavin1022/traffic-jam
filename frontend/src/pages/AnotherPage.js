@@ -11,7 +11,7 @@ function AnotherPage() {
   const [background, setBackground] = useState();
 
   const red = () => {
-    document.body.style='background: #ff3838;'
+    document.body.style='background: #dd6969;'
     SetMessge("Time to break!");
   }
 
@@ -21,7 +21,7 @@ function AnotherPage() {
   }
 
   const green = () => {
-    document.body.style='background: #65e98c;'
+    document.body.style='background: #5db871;'
     SetMessge("Work Away!");
   }
 
