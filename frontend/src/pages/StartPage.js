@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 function StartPage() {
     return (
-      <div id={'index-container'}>
+      <div className={"enter-detail-page"}>
         <div className={'spacer'} />
             <div className={'content'}>
                 <h1>Enter User Details</h1>
