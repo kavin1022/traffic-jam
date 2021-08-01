@@ -24,9 +24,9 @@ function AnotherPage() {
   }
 
   const green = () => {
-    document.body.style='background: #5db871;'
-    setBackgroundText("green");
-    SetMessge("Work Away!");
+      document.body.style='background: #5db871;'
+      setBackgroundText("green");
+      SetMessge("Work Away!");
   }
 
   function startBreak() {
@@ -41,7 +41,9 @@ function AnotherPage() {
   }
   
   function finishBreak() {
-    setBackground(green);
+    if (backgroundText !== "yellow"){
+      setBackground(green);
+    }
   }
 
   return (
