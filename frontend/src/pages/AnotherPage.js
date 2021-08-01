@@ -9,34 +9,39 @@ import { Link } from 'react-router-dom';
 function AnotherPage() {
   const [message, SetMessge] = useState("Click the green button to start!");
   const [background, setBackground] = useState();
+  const [backgroundText, setBackgroundText] = useState();
 
   const red = () => {
-    document.body.style='background: #a52929;'
+    document.body.style='background: #dd6969;'
+    setBackgroundText("red");
     SetMessge("Time to break!");
   }
 
   const yellow = () => {
     document.body.style='background: #fdbe5e;'
+    setBackgroundText("yellow");
     SetMessge("You have three seconds to save your file!");
   }
 
   const green = () => {
     document.body.style='background: #5db871;'
+    setBackgroundText("green");
     SetMessge("Work Away!");
   }
 
   function startBreak() {
     /* Sets background colour to yellow for five seconds before changing to red*/
-    setBackground(yellow);
-    setTimeout(() => {
-      setBackground(red)
-    }, 2000); 
+    if (backgroundText !== "red"){
+      setBackground(yellow);
+      setTimeout(() => {
+        setBackground(red)
+      }, 2000); 
+    }
     
   }
   
   function finishBreak() {
     setBackground(green);
-
   }
 
   return (
