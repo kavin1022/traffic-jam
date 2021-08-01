@@ -12,7 +12,7 @@ function AnotherPage() {
   const [backgroundText, setBackgroundText] = useState();
 
   const red = () => {
-    document.body.style='background: #dd6969;'
+    document.body.style='background: #a52929;'
     setBackgroundText("red");
     SetMessge("Time to break!");
   }
