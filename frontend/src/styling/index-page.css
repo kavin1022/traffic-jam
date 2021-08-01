@@ -88,7 +88,12 @@
     z-index: 0;
 }
 
-#enter-detail-page {
+.enter-detail-page {
     background-color: white;
-    height: 100vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
