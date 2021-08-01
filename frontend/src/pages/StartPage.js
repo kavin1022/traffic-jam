@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function StartPage() {
+  document.body.style='background: #ffffff;'
     return (
       <div className={"enter-detail-page"}>
         <div className={'spacer'} />

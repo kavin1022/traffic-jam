@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core';
 import '../styling/index.css';
 import InfoStats from '../components/TrafficPage/InfoStats';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 function AnotherPage() {
   const [message, SetMessge] = useState("Click the green button to start!");
@@ -40,7 +41,12 @@ function AnotherPage() {
 
   return (
     <div>
-      <h1>Room Number: #28123</h1>
+      
+      <Button component={Link} to="/" variant="contained" color="primary" id="return-button">Return to Home</Button>
+
+      <div id="top-div">
+        <h1 id="room-number">Room Number: #28123</h1>
+      </div>
       <InfoStats/>
       <br/>
       <p id="message">{message}</p>

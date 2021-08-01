@@ -75,5 +75,13 @@ body {
 #message{
   margin-top: 180px;
   font-size: 50px;
+}
 
+#return-button{
+  float: left;
+  margin-left: 40px;
+}
+
+#top-div{
+  margin-right: 170px;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -20,6 +20,8 @@ const StyledFormContainer = styled.form`
 `
 
 function JoinPage() {
+  document.body.style='background: #ffffff;'
+
     return (
       <div className={'enter-detail-page'}>
         <div className={'spacer'} />
