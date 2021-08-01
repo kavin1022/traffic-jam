@@ -13,7 +13,7 @@ function IndexPage() {
       
       <div id={'index-container'}>
           <div>
-            <h1 id="title">Traffic Jam</h1>
+            <h1 id="title">Traffic&nbsp;&nbsp;&nbsp;Jam</h1>
           </div>
           <div className="startBtnContainer">
             <Link to="/start" className="links">
